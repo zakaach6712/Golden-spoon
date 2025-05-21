@@ -1,9 +1,24 @@
 body{
-  background-color:orange;
-  color:blue;
-
-
+  background-color:orangered;
+  width: 100%;
+  min-height: 100vh; /* Optional: Ensures full viewport height */
+  overflow-x: hidden;
 }
-button{
-  
+header{
+  background-color:white;
+  text-align:center;
+  padding:20px;
+  margin-top: 0px;
 }
+.nav-links{
+  font-family: Raleway, sans-serif;
+  color:white;
+  }
+  .nav-links:hover{
+    color:orange;
+    
+  }
+  .logo{
+    font-family: Raleway, sans-serif;
+    color:white;
+  }
