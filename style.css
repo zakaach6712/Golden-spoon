@@ -3,20 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  background-color: rgba(0, 0, 0, 0.75); 
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;           
-  padding: 1rem 2rem;            
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px;
 }
+
+.container01 {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.full-width-bg {
+  padding: 1rem 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75); 
+  margin: 0 ;
+  justify-items: center;
+  padding: 1rem;         
+  padding: 1rem 2rem;   
+}
+
 
 .main-nav {
   display: flex;
   gap: 2rem;
-  list-style: none; 
-  padding: 0;      
+  list-style: none;     
 }
 
 .main-nav a {
@@ -35,6 +54,8 @@ header {
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   }
+
+
 body {
   font-family: Raleway, sans-serif;
   background-image: url(images/burgers.jpg); 
@@ -46,22 +67,60 @@ body {
   line-height: 1.6; 
 }
 
+
 .above-fold {
-  display: flex;
+  display: block;
+  width: 75%;
+  max-width: 800px;
   flex-direction: column; 
-  justify-content: center;
+  justify-content: left;
   align-items: left;
   height: 100vh; 
-  text-align: left; 
-  background-image: url(images/burgers.jpg); 
-  background-size: cover; 
-  background-position: center;
+  text-align: left;
   color: white; 
   padding: 20px;
 }
 
+.below-fold {
+  display: inline-block;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  margin: auto; 
+  padding: 20px;
+}
+
+.menu-item {
+  display:inline-block;
+  width: 23%;
+  max-width: 500px;
+  height: 600px;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px; 
+  margin-bottom: 1rem; 
+}
+
+.scan-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem; 
+  background-image: url(images/slant_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 h1 {
-  font-size: 6rem; 
+  font-family: 'Alex Brush', cursive;
+  font-size: 8rem; 
   margin-bottom: 1rem; 
   color: white;
 }
